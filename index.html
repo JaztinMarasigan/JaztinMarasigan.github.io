@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Weather App</h1>
+      <p>Search a city to see the weather</p>
+    </header>
+
+    <section class="search">
+      <input
+        type="text"
+        id="city-input"
+        placeholder="Enter city name..."
+      />
+      <button id="search-btn">Search</button>
+      <button id="save-favorite-btn">⭐ Save Favorite</button>
+    </section>
+
+    <section id="favorites-section">
+      <h2>Favorite Locations</h2>
+      <ul id="favorites-list">
+        <!-- Favorite cities will be inserted here -->
+      </ul>
+    </section>
+
+    <section id="current-weather" class="card hidden">
+      <h2>Current Weather</h2>
+      <div class="current-main">
+        <div>
+          <h3 id="city-name"></h3>
+          <p id="weather-description"></p>
+          <p><span id="temperature"></span>°C</p>
+        </div>
+        <img id="weather-icon" alt="Weather icon" />
+      </div>
+      <p class="details">
+        Humidity: <span id="humidity"></span>% ·
+        Wind: <span id="wind-speed"></span> m/s
+      </p>
+    </section>
+
+    <section id="forecast" class="card hidden">
+      <h2>5-Day Forecast</h2>
+      <div id="forecast-grid">
+        <!-- Forecast cards will be inserted here -->
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
