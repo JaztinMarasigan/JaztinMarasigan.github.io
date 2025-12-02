@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  .app {
+    background: rgba(0, 0, 0, 0.35);
+    padding: 20px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 800px;
+    backdrop-filter: blur(8px);
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 4px;
+  }
+  
+  .search {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .search input {
+    flex: 1;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+  }
+  
+  .search button {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  #save-favorite-btn {
+    background: #ffc107;
+  }
+  
+  #search-btn {
+    background: #00e676;
+  }
+  
+  #favorites-section {
+    margin-bottom: 20px;
+  }
+  
+  #favorites-section h2 {
+    margin-bottom: 8px;
+  }
+  
+  #favorites-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  #favorites-list li {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 6px 10px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .card {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .current-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .current-main img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .details {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    opacity: 0.9;
+  }
+  
+  #forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .forecast-day {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+  
+  .forecast-day img {
+    width: 50px;
+    height: 50px;
+    margin: 4px 0;
+  }
+  
